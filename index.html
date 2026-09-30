@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de ferramentas para agentes</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #121214; color: #e1e1e6; }
+    main { max-width: 960px; margin: auto; padding: 32px 20px; }
+    h1 { margin: 8px 0 16px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h2 { margin-top: 0; font-size: 1.2rem; }
+    p { line-height: 1.6; }
+    .identificacao { padding: 16px; border: 1px solid #62626b; border-radius: 8px; }
+    .identificacao p { margin: 4px 0; }
+    .grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 24px 0; }
+    article { padding: 20px; border: 1px solid #62626b; border-radius: 8px; background: #202024; }
+    .estado { display: inline-block; color: #b9fbc0; padding: 4px 8px; border: 1px solid #477b51; border-radius: 4px; }
+    footer { color: #b4b4bc; margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Turma B</p>
+    <h1>Catálogo de ferramentas para agentes</h1>
+    <section class="identificacao" aria-label="Identificação da entrega">
+      <p>Nome <strong>MICAELA</strong></p>
+      <p>RA <strong>23150068-2</strong></p>
+      <p>Código da aula <strong>3213</strong></p>
+    </section>
+    <p id="etapa">Catálogo revisado</p>
+    <section class="grade" aria-label="Ferramentas">
+      <article>
+        <h2>Leitura de arquivo</h2>
+        <p>Lê um arquivo do projeto e devolve seu conteúdo ao agente.</p>
+        <span class="estado">Disponível</span>
+      </article>
+      <article>
+        <h2>Execução de testes</h2>
+        <p>Executa os testes do projeto e devolve o resultado.</p>
+        <span class="estado">Disponível</span>
+      </article>
+      <article>
+        <h2>Executar Código Python</h2>
+        <p>Executa scripts em ambiente isolado para análise de dados e cálculos complexos. Essa ferramenta é leve e consistente.</p>
+        <span class="estado">Disponível</span>
+      </article>
+    </section>
+    <footer>Atividade individual de Docker. 30/09/2026.</footer>
+  </main>
+</body>
+</html>
